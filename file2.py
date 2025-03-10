@@ -19,7 +19,7 @@ def process_frame(frame, face_mesh):
             x_max = max([landmark.x * frame.shape[1] for landmark in face_landmarks.landmark])
             face_midpoint_x = int((x_min + x_max) / 2)
 
-            # Display the x-coordinate of the face midpoint
+            
             cv2.putText(image_bgr, f'Face X: {face_midpoint_x}', (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
             # Draw the face mesh annotations on the image.
