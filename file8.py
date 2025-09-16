@@ -5,6 +5,7 @@ import serial
 import time
 
 # Function to detect thumb and index finger touching and holding
+
 def is_touch_hold(hand_keypoints, touch_thresh=0.04):
     thumb_top_y = hand_keypoints.landmark[4].y
     index_top_y = hand_keypoints.landmark[8].y
@@ -83,3 +84,4 @@ while True:
 cap.release()
 ser.close()
 cv2.destroyAllWindows()
+
