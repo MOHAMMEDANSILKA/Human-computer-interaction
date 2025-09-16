@@ -1,6 +1,6 @@
 import cv2
 import mediapipe as mp
-
+#tthis is the intermediate file 
 # Function to detect thumb and index finger touching and holding
 def is_touch_hold(hand_keypoints):
     # Threshold value for touch detection
@@ -84,3 +84,4 @@ while True:
 # Release video capture and close OpenCV windows
 cap.release()
 cv2.destroyAllWindows()
+
