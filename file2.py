@@ -77,5 +77,7 @@ with mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence
             break
 
 # Release the video capture object and close all OpenCV windows
+
 cap.release()
 cv2.destroyAllWindows()
+
