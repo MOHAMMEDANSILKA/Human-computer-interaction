@@ -6,7 +6,7 @@ import requests
 def is_touch_hold(hand_keypoints):
     # Threshold value for touch detection
     touch_thresh = 0.04  # Adjust as needed
-    
+    # this is latest algo
     # Calculate distances between the top points of thumb and index finger for touch detection
     thumb_top_y = hand_keypoints.landmark[4].y
     index_top_y = hand_keypoints.landmark[8].y
@@ -103,4 +103,5 @@ while True:
 # Release video capture and close OpenCV windows
 cap.release() 
 cv2.destroyAllWindows()
+
 
